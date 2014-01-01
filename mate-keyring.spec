@@ -1,11 +1,11 @@
 Summary:	Keep passwords and other user's secrets
 Name:		mate-keyring
-Version:	1.6.0
+Version:	1.6.1
 Release:	1
 License:	LGPL v2+/GPL v2+
 Group:		X11/Applications
 Source0:	http://pub.mate-desktop.org/releases/1.6/%{name}-%{version}.tar.xz
-# Source0-md5:	46aebb2d0c612f9281e48ce874109871
+# Source0-md5:	3691d4d42ce7db525e6374b1e6505677
 URL:		http://wiki.mate-desktop.org/mate-keyring
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -119,6 +119,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/xdg/autostart/mate-keyring-secrets.desktop
 %{_sysconfdir}/xdg/autostart/mate-keyring-ssh.desktop
 
+%{_mandir}/man1/mate-keyring-daemon.1*
+%{_mandir}/man1/mate-keyring.1*
+
 %files libs
 %defattr(644,root,root,755)
 %dir %{_datadir}/%{name}
@@ -135,5 +138,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files apidocs
 %defattr(644,root,root,755)
-%{_gtkdocdir}/mate-*
+%{_gtkdocdir}/gck
+%{_gtkdocdir}/gcr-0
 
