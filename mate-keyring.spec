@@ -1,7 +1,7 @@
 Summary:	Keep passwords and other user's secrets
 Name:		mate-keyring
 Version:	1.6.1
-Release:	1
+Release:	2
 License:	LGPL v2+/GPL v2+
 Group:		X11/Applications
 Source0:	http://pub.mate-desktop.org/releases/1.6/%{name}-%{version}.tar.xz
